@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Curso de HTML e CSS - Exemplos de Seletores de Atributo em CSS
+    </title>
+    <style>
+      /* Reset de margens e espaçamentos */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Seletor para atributo que termina com "-end" ($=) */
+      p[data-type$="-end"] {
+        color: green;
+        font-weight: bold;
+      }
+
+      /* Seletor para atributo que contém a palavra "special" (~=) */
+      p[class~="special"] {
+        background-color: #e0ffff;
+        padding: 5px;
+      }
+
+      /* Seletor para atributo que começa com "start" (^=) */
+      p[data-info^="start"] {
+        color: orange;
+        text-transform: uppercase;
+      }
+
+      /* Seletor para atributo que contém "part" (*=) */
+      p[data-role*="part"] {
+        border: 1px dashed purple;
+        padding: 5px;
+      }
+
+      /* Seletor para atributo que tem "lang" começando com "en" (|=) */
+      p[lang|="en"] {
+        font-style: italic;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <section>
+        <h1 class="color-red">Exemplos de Seletores de Atributo</h1>
+
+        <!-- Atributo termina com "-end" -->
+        <p data-type="back-end">
+          Este parágrafo será estilizado porque o atributo termina com "-end".
+        </p>
+
+        <!-- Atributo contém a palavra "special" -->
+        <p class="highlight special">
+          Este parágrafo será estilizado porque contém a palavra "special" no
+          atributo `class`.
+        </p>
+
+        <!-- Atributo começa com "start" -->
+        <p data-info="start-here">
+          Este parágrafo será estilizado porque o atributo começa com "start".
+        </p>
+
+        <!-- Atributo contém "part" -->
+        <p data-role="important-part">
+          Este parágrafo será estilizado porque o atributo contém "part".
+        </p>
+
+        <!-- Atributo lang começando com "en" -->
+        <p lang="en-US">
+          Este parágrafo será estilizado porque o atributo `lang` começa com
+          "en".
+        </p>
+
+        <!-- Outro exemplo que não será estilizado -->
+        <p data-info="other">
+          Este parágrafo não será afetado pelos seletores acima.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

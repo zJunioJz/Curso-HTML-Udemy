@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input:not(:checked) + p {
+  background-color: yellow;
+}
+
+p {
+  color: blue;
+}
+
+p:not(.meio) {
+  color: red;
+}
+
+.ul-1 li:nth-child(even) {
+  background-color: purple;
+  color: white;
+}
+
+.ul-1 li:nth-child(odd) {
+  background-color: orange;
+  color: white;
+}
+
+.ul-2 li::after {
+  content: " - ";
+  background-color: red;
+  color: white;
+  display: block;
+}
+
+.text::first-letter {
+  font-size: 150px;
+  display: block;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.text::first-line {
+  background-color: blue;
+}
+
+.text::selection {
+  background-color: black;
+  color: white;
+}
