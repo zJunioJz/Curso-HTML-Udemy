@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serift;
+}
+.grid {
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+  padding-top: 73px;
+}
+.grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid .col {
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  padding: 15px;
+}
+.grid .col-content {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  align-content: center;
+  box-shadow: 0 0 15px 0 grey;
+}
+p {
+  clear: left;
+}
+.menu {
+  width: 100%;
+  position: fixed;
+  background: black;
+  border-radius: 0 0 15px 15px;
+}
+
+.menu ul {
+  list-style: none;
+  display: block;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.menu ul li a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover {
+  background: #333;
+}
+
+.full-page {
+  max-width: 100%;
+
+  padding-top: 73px;
+  height: 100vh;
+  background-color: turquoise;
+}
+.full-page-content {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+/* Media query */
+@media all and (max-width: 568px) {
+  .grid .col {
+    width: 100%;
+  }
+}
+@media all and (min-width: 569px) and (max-width: 768px) {
+  .grid .col {
+    width: 50%;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+  .grid .col {
+    width: 33.33%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .grid .col {
+    width: 25%;
+  }
+}

@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%; /* Base para rem */
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .pai {
+    width: 300px; /* px */
+    height: 300px;
+    background-color: crimson;
+    overflow: hidden;
+  }
+  
+  .color-one {
+    width: 30rem; /* rem */
+    height: 20rem;
+    background-color: turquoise;
+  }
+  
+  .color-two {
+    width: 20em; /* em */
+    height: 10em;
+    background-color: blueviolet;
+  }
+  
+  .color-three {
+    width: 80%; /* % */
+    height: 50%;
+    background-color: lightgreen;
+  }
+  
+  .color-four {
+    width: 50vw; /* vw */
+    height: 50vh; /* vh */
+    background-color: coral;
+  }
+  
+  .color-five {
+    width: 20vmin; /* vmin */
+    height: 20vmax; /* vmax */
+    background-color: darkorange;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+  }
+  
